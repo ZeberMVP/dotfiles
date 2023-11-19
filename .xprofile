@@ -1,0 +1,24 @@
+# Env vars
+export PATH=$HOME/.local/bin:$PATH
+export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_STYLE_OVERRIDE=kvantum 
+
+# Screens
+hdmi=`xrandr | grep ' connected' | grep 'HDMI' | awk '{print $1}'`
+
+if [ "$hdmi" = "HDMI-1" ]; then
+  xrandr --output eDP-1 --primary --mode 1366x768 --pos 276x1080 --output HDMI-1 --mode 1920x1080 --pos 0x0 &
+else
+  xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off &
+fi
+
+# Composer
+picom &
+# Keyboard Layout
+setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl &
+# Wallpaper
+feh --bg-max Wallpapers/red-girl-moon.jpg &
+# Mouse sensivity
+xinput --set-prop 9 'libinput Accel Speed' -0.9 &
+# Brightness
+xrandr --output HDMI-0 --brightness 0.8 &
