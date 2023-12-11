@@ -41,6 +41,10 @@ keys = [
         ([mod, "shift"], "m", lazy.spawn("rofi -show")),
         # Browser
         ([mod], "b", lazy.spawn("brave")),
+        # VSCode
+        ([mod], "c", lazy.spawn("code")),
+        # Spotify
+        ([mod], "s", lazy.spawn("spotify-launcher")),
         # File Explorer
         ([mod], "e", lazy.spawn("thunar")),
         # Terminal
@@ -49,7 +53,7 @@ keys = [
         ([mod], "r", lazy.spawn("redshift -O 2400")),
         ([mod, "shift"], "r", lazy.spawn("redshift -x")),
         # Screenshot
-        ([mod], "s", lazy.spawn("scrot")),
+        # ([mod], "s", lazy.spawn("scrot")),
         ([mod, "shift"], "s", lazy.spawn("scrot -s")),
         # ------------ Hardware Configs ------------
         # Volume
