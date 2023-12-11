@@ -152,3 +152,12 @@ alias stopmysql='sudo /opt/lampp/lampp stopmysql'
 #cat ~/.cache/wal/sequences
 
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/home/zeber/.bun/_bun" ] && source "/home/zeber/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+autoload -U compinit && compinit
