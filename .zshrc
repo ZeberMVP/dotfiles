@@ -148,6 +148,10 @@ alias stopapache='sudo /opt/lampp/lampp stopapache'
 alias startmysql='sudo /opt/lampp/lampp startmysql'
 alias stopmysql='sudo /opt/lampp/lampp stopmysql'
 
+# vscode
+alias sudocode='sudo chown -R zeber /opt/visual-studio-code'
+alias nosudocode='sudo chown -R root /opt/visual-studio-code'
+
 #custom stuff
 #cat ~/.cache/wal/sequences
 
