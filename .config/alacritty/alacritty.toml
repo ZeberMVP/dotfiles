@@ -1,0 +1,34 @@
+import = ["/home/zeber/.config/alacritty/colors.toml", "/home/zeber/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[colors]
+# background = "#282738"
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.75
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 82
+lines = 24
+
+[window.padding]
+x = 30
+y = 30

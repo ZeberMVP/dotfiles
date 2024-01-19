@@ -148,10 +148,6 @@ alias stopapache='sudo /opt/lampp/lampp stopapache'
 alias startmysql='sudo /opt/lampp/lampp startmysql'
 alias stopmysql='sudo /opt/lampp/lampp stopmysql'
 
-# vscode
-alias sudocode='sudo chown -R zeber /opt/visual-studio-code'
-alias nosudocode='sudo chown -R root /opt/visual-studio-code'
-
 #custom stuff
 #cat ~/.cache/wal/sequences
 
@@ -165,3 +161,14 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 autoload -U compinit && compinit
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# polkit-gnome
+alias polkit='/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &'
+
+# power
+alias sn='shutdown now'
+alias rb='reboot'

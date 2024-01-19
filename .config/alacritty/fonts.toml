@@ -1,0 +1,14 @@
+[font]
+size = 14
+
+[font.bold]
+family = "UbuntuMono Nerd Font"
+
+[font.bold_italic]
+family = "UbuntuMono Nerd Font"
+
+[font.italic]
+family = "UbuntuMono Nerd Font"
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
