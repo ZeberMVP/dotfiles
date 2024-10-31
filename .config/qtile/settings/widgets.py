@@ -1,4 +1,4 @@
-from libqtile import widget
+from libqtile import widget, qtile
 
 widget_defaults = dict(
     font="sans",
@@ -121,6 +121,27 @@ primary_widgets = [
         font="JetBrains Mono Bold",
         fontsize=13,
         update_interval=5,
+    ),
+    widget.Image(
+        filename="~/.config/qtile/Assets/2.png",
+    ),
+    widget.Spacer(
+        length=4,
+        background="#302d3e",
+    ),
+    widget.TextBox(
+        text=" ",
+        font="Font Awesome 6 Free Solid",
+        fontsize=20,
+        background="#302d3e",
+        foreground="#ca233b",
+    ),
+    widget.Battery(
+        font="JetBrainsMono Nerd Font Bold",
+        fontsize=13,
+        background="#302d3e",
+        foreground="#fbd7dc",
+        format="{percent:2.0%}",
     ),
     widget.Image(
         filename="~/.config/qtile/Assets/2.png",
